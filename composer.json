@@ -1,0 +1,37 @@
+{
+  "name": "isaacdagel/laravel-sqrl",
+  "description": "A Laravel Package",
+  "license": "MIT",
+  "authors": [
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php" : "^7.1",
+    "illuminate/support": "~5.6.0|~5.7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.3|^7.0",
+    "orchestra/testbench": "~3.6.0|~3.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Isaacdagel\\LaravelSqrl\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Isaacdagel\\LaravelSqrl\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Isaacdagel\\LaravelSqrl\\LaravelSqrlServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test:windows": "vendor\\bin\\phpunit"
+  }
+}
